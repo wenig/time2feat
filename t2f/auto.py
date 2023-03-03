@@ -4,9 +4,9 @@ import pandas as pd
 from tqdm import tqdm
 from sklearn.model_selection import ParameterGrid
 
-from .importance import features_scoring_selection, features_simple_selection
-from .preprocessing import apply_transformation
-from .clustering import ClusterWrapper, cluster_metrics
+from t2f.importance import features_scoring_selection, features_simple_selection
+from t2f.preprocessing import apply_transformation
+from t2f.clustering import ClusterWrapper, cluster_metrics
 
 
 def simple_grid_search(df_base: pd.DataFrame, y_base: list, df_complete: pd.DataFrame, params: dict):

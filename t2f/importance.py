@@ -9,8 +9,8 @@ from sklearn.model_selection import ParameterGrid
 from t2f.utils.PFA import PFA
 import warnings
 
-from .preprocessing import apply_transformation
-from .clustering import ClusterWrapper, cluster_metrics
+from t2f.preprocessing import apply_transformation
+from t2f.clustering import ClusterWrapper, cluster_metrics
 
 
 def feature_selection(df_feats: pd.DataFrame, labels: dict = None, context: dict = None):

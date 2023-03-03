@@ -5,7 +5,7 @@ from sklearn.metrics.cluster import adjusted_mutual_info_score, adjusted_rand_sc
 
 import matplotlib.pyplot as plt
 
-from .clustering import ClusterWrapper, cluster_metrics
+from t2f.clustering import ClusterWrapper, cluster_metrics
 
 
 def get_sliding_window_matrix(data: np.array, window: int, stride: int):

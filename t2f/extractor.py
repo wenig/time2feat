@@ -4,8 +4,8 @@ import numpy as np
 import pandas as pd
 import multiprocessing as mp
 
-from .features.extractor_single import extract_univariate_features
-from .features.extractor_pair import extract_pair_features
+from t2f.features.extractor_single import extract_univariate_features
+from t2f.features.extractor_pair import extract_pair_features
 
 
 def padding_series(ts_list: list):

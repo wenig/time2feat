@@ -2,7 +2,7 @@ import os
 import numpy as np
 import pandas as pd
 
-from .reader import load_from_tsfile_to_dataframe
+from t2f.reader import load_from_tsfile_to_dataframe
 
 
 def read_mts(path: str):

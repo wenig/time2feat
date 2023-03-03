@@ -3,7 +3,7 @@ from sklearn.cluster import AgglomerativeClustering, KMeans, SpectralClustering
 from sklearn.metrics.cluster import adjusted_mutual_info_score, adjusted_rand_score, homogeneity_score, \
     normalized_mutual_info_score
 
-from .preprocessing import get_transformer
+from t2f.preprocessing import get_transformer
 
 def _define_model(model_type: str, num_cluster: int):
     """ Define the clustering model """
