@@ -32,7 +32,7 @@ def extract_single_series_features(record: np.array, sensors_name: list):
 
 def extract_single_series_features_batch(ts_list: np.array, batch_size: int = -1, pid: int = 1):
     """ Extract features for each signal in each time series in batch mode """
-    sensors_name = [str(i) for i in range(ts_list.shape[2])]
+    sensors_name = [str(i) for i in range(ts_list[0].shape[1])]
     ts_list = [arr for arr in ts_list]
 
     if batch_size == -1:
